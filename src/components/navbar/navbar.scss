@@ -1,0 +1,275 @@
+.navbar {
+  width: 100%;
+  height: 85px;
+
+  .res-nav {
+    display: none;
+  }
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .left {
+      font-family: "Antonio";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 36px;
+      letter-spacing: -1.05px;
+      text-transform: uppercase;
+
+      color: #ffffff;
+
+      padding-left: 33px;
+    }
+
+    .more-icon {
+      display: none;
+    }
+
+    .right {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      .planet {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        font-family: "Spartan";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 11px;
+        line-height: 25px;
+        /* identical to box height, or 227% */
+
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        color: rgb(255, 255, 255, 0.75);
+
+        mix-blend-mode: normal;
+
+        margin-right: 33px;
+
+        cursor: pointer;
+
+        text-decoration: none;
+
+        &.Mercury {
+          color: #ffffff;
+          border-top: 4px solid;
+          border-color: #419ebb;
+        }
+
+        &.Venus {
+          color: #ffffff;
+
+          border-top: 4px solid;
+          border-color: #eda249;
+        }
+
+        &.Earth {
+          color: #ffffff;
+
+          border-top: 4px solid;
+          border-color: #6d2ed5;
+        }
+
+        &.Mars {
+          color: #ffffff;
+
+          border-top: 4px solid;
+          border-color: #d14c32;
+        }
+
+        &.Jupiter {
+          color: #ffffff;
+
+          border-top: 4px solid;
+          border-color: #d83a34;
+        }
+
+        &.Saturn {
+          color: #ffffff;
+
+          border-top: 4px solid;
+          border-color: #cd5120;
+        }
+
+        &.Uranus {
+          color: #ffffff;
+
+          border-top: 4px solid;
+          border-color: #1ec1a2;
+        }
+
+        &.Neptune {
+          color: #ffffff;
+
+          border-top: 4px solid;
+          border-color: #2d68f0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .navbar {
+    width: 100%;
+    height: 159px;
+
+    .wrapper {
+      flex-direction: column;
+
+      .left {
+        padding: unset;
+        margin-top: 32px;
+        margin-bottom: 13px;
+      }
+
+      .right {
+        width: calc(100% - 102px);
+        justify-content: space-between;
+
+        .planet {
+          height: 25px;
+          margin-right: unset;
+          &.Mercury {
+            color: rgb(255, 255, 255, 0.75);
+            border: none;
+          }
+
+          &.Venus {
+            color: rgb(255, 255, 255, 0.75);
+
+            border: none;
+          }
+
+          &.Earth {
+            color: rgb(255, 255, 255, 0.75);
+
+            border: none;
+          }
+
+          &.Mars {
+            color: rgb(255, 255, 255, 0.75);
+
+            border: none;
+          }
+
+          &.Jupiter {
+            color: rgb(255, 255, 255, 0.75);
+
+            border: none;
+          }
+
+          &.Saturn {
+            color: rgb(255, 255, 255, 0.75);
+
+            border: none;
+          }
+
+          &.Uranus {
+            color: rgb(255, 255, 255, 0.75);
+
+            border: none;
+          }
+
+          &.Neptune {
+            color: rgb(255, 255, 255, 0.75);
+            border: none;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .navbar {
+    width: 100%;
+    height: 68px;
+
+    .res-nav {
+      display: block;
+
+      .wrap {
+        width: 100%;
+        height: calc(950px - 68px);
+
+        .item {
+          height: 75px;
+          width: 319px;
+          margin-left: 24px;
+          margin-right: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          border-bottom: 1px solid rgb(255, 255, 255, 0.1);
+          .left {
+            display: flex;
+            align-items: center;
+
+            img {
+              margin-right: 25px;
+              width: 20px;
+              height: 20px;
+            }
+
+            .planet {
+              text-decoration: none;
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 15px;
+              line-height: 25px;
+              /* identical to box height, or 167% */
+
+              text-align: center;
+              letter-spacing: 1.36364px;
+              text-transform: uppercase;
+
+              color: #ffffff;
+            }
+          }
+
+          .right {
+            color: rgb(255, 255, 255, 0.4);
+          }
+        }
+      }
+    }
+
+    .wrapper {
+      flex-direction: row;
+
+      .left {
+        padding: unset;
+        margin: 16px 0;
+        margin-left: 24px;
+      }
+
+      .more-icon {
+        display: block;
+        width: 24px;
+        height: 17px;
+        margin: 26px 0;
+        margin-right: 24px;
+      }
+
+      .right {
+        width: calc(100% - 102px);
+        justify-content: space-between;
+        display: none;
+      }
+    }
+  }
+}

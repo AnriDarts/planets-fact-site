@@ -1,0 +1,527 @@
+.planet-info {
+  width: 100%;
+  height: 537px;
+  margin-top: 126px;
+  margin-bottom: 87px;
+
+  .wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .right {
+      height: 100%;
+      width: 350px;
+      margin-right: 165px;
+
+      .text {
+        .title {
+          font-family: "Antonio";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 80px;
+          line-height: 104px;
+          /* identical to box height */
+
+          text-transform: uppercase;
+
+          color: #ffffff;
+
+          margin-bottom: 23px;
+        }
+
+        .description {
+          width: 350px;
+          font-family: "Spartan";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 25px;
+
+          color: rgb(255, 255, 255, 0.6);
+
+          margin-bottom: 24px;
+        }
+
+        .src {
+          font-family: "Spartan";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 25px;
+          /* identical to box height, or 179% */
+
+          color: rgb(255, 255, 255, 0.5);
+
+          mix-blend-mode: normal;
+
+          a {
+            color: rgb(255, 255, 255, 0.6);
+            font-weight: 700;
+          }
+
+          margin-bottom: 39px;
+        }
+      }
+
+      .options {
+        &.Mercury {
+          .option {
+            &.active {
+              background: #419ebb;
+              border: none;
+            }
+          }
+        }
+
+        &.Venus {
+          .option {
+            &.active {
+              background: #eda249;
+              border: none;
+            }
+          }
+        }
+
+        &.Earth {
+          .option {
+            &.active {
+              background: #6d2ed5;
+              border: none;
+            }
+          }
+        }
+
+        &.Mars {
+          .option {
+            &.active {
+              background: #d14c32;
+              border: none;
+            }
+          }
+        }
+
+        &.Jupiter {
+          .option {
+            &.active {
+              background: #d83a34;
+              border: none;
+            }
+          }
+        }
+
+        &.Saturn {
+          .option {
+            &.active {
+              background: #cd5120;
+              border: none;
+            }
+          }
+        }
+
+        &.Uranus {
+          .option {
+            &.active {
+              background: #1ec1a2;
+              border: none;
+            }
+          }
+        }
+
+        &.Neptune {
+          .option {
+            &.active {
+              background: #2d68f0;
+              border: none;
+            }
+          }
+        }
+
+        .option {
+          width: 350px;
+          height: 48px;
+          margin-bottom: 16px;
+
+          mix-blend-mode: normal;
+          border: 1px solid rgba(255, 255, 255, 0.2);
+          display: flex;
+          cursor: pointer;
+
+          &:hover {
+            background: rgb(217, 217, 217, 0.2);
+            mix-blend-mode: normal;
+          }
+
+          span {
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 25px;
+            /* identical to box height, or 208% */
+
+            letter-spacing: 2.57143px;
+            text-transform: uppercase;
+
+            color: #ffffff;
+
+            padding-top: 12px;
+            padding-bottom: 11px;
+
+            &.num {
+              font-family: "Spartan";
+              font-style: normal;
+              font-weight: 700;
+              font-size: 12px;
+              line-height: 25px;
+              /* identical to box height, or 208% */
+
+              letter-spacing: 2.57143px;
+              text-transform: uppercase;
+
+              color: rgb(255, 255, 255, 0.5);
+
+              mix-blend-mode: normal;
+              margin: 0 28px;
+            }
+          }
+        }
+      }
+    }
+
+    .left {
+      height: 100%;
+      width: calc(100% - 350px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-left: 50px;
+
+      .geology {
+        width: 158px;
+        position: absolute;
+        top: 555px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .planet-info {
+    height: 713px;
+    margin-top: unset;
+    margin-bottom: 27px;
+
+    .wrapper {
+      flex-direction: column;
+
+      .left {
+        height: (768px - 253px);
+        width: 100%;
+        margin-left: unset;
+        .planet-img {
+          &.Mercury {
+            width: 184px;
+            height: 184px;
+          }
+
+          &.Venus {
+            width: 253px;
+            height: 253px;
+          }
+
+          &.Earth {
+            width: 285px;
+            height: 285px;
+          }
+
+          &.Mars {
+            width: 213px;
+            height: 213px;
+          }
+
+          &.Jupiter {
+            width: 369px;
+            height: 369px;
+          }
+
+          &.Saturn {
+            width: 400px;
+            height: 400px;
+          }
+
+          &.Uranus {
+            width: 290px;
+            height: 290px;
+          }
+
+          &.Neptune {
+            width: 285px;
+            height: 285px;
+          }
+        }
+
+        .geology {
+          width: 100px;
+          position: absolute;
+          top: 470px;
+        }
+      }
+
+      .right {
+        width: 100%;
+        height: 253px;
+        margin-right: unset;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .text {
+          margin-top: 30px;
+          .title {
+            font-size: 48px;
+            line-height: 62px;
+          }
+
+          .description {
+            width: 339px;
+            font-size: 11px;
+            line-height: 22px;
+            margin-bottom: 32px;
+          }
+          .src {
+            margin-bottom: 27px;
+          }
+          margin-right: 69px;
+        }
+
+        .options {
+          margin-top: 30px;
+          .option {
+            width: 281px;
+            height: 40px;
+
+            span {
+              display: flex;
+              align-items: center;
+
+              font-size: 9px;
+
+              &.num {
+                font-size: 9px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 376px) {
+  .planet-info {
+    height: 590px;
+
+    .wrapper {
+      flex-direction: column;
+
+      .sub-navbar {
+        width: 100%;
+        height: 50px;
+        border-bottom: 1px solid rgb(255, 255, 255, 0.2);
+        .options {
+          width: 100%;
+          height: 50px;
+          color: rgb(255, 255, 255, 0.5);
+          display: flex;
+          justify-content: space-between;
+
+          cursor: pointer;
+
+          &.Mercury {
+            .option {
+              &.active {
+                color: rgb(255, 255, 255);
+                border-bottom: 4px solid #419ebb;
+              }
+            }
+          }
+
+          &.Venus {
+            .option {
+              &.active {
+                color: rgb(255, 255, 255);
+                border-bottom: 4px solid #eda249;
+              }
+            }
+          }
+
+          &.Earth {
+            .option {
+              &.active {
+                color: rgb(255, 255, 255);
+                border-bottom: 4px solid #6d2ed5;
+              }
+            }
+          }
+
+          &.Mars {
+            .option {
+              &.active {
+                color: rgb(255, 255, 255);
+                border-bottom: 4px solid #d14c32;
+              }
+            }
+          }
+
+          &.Jupiter {
+            .option {
+              &.active {
+                color: rgb(255, 255, 255);
+                border-bottom: 4px solid #d83a34;
+              }
+            }
+          }
+
+          &.Saturn {
+            .option {
+              &.active {
+                color: rgb(255, 255, 255);
+                border-bottom: 4px solid #cd5120;
+              }
+            }
+          }
+
+          &.Uranus {
+            .option {
+              &.active {
+                color: rgb(255, 255, 255);
+                border-bottom: 4px solid #1ec1a2;
+              }
+            }
+          }
+
+          &.Neptune {
+            .option {
+              &.active {
+                color: rgb(255, 255, 255);
+                border-bottom: 4px solid #2d68f0;
+              }
+            }
+          }
+
+          .option {
+            text-transform: uppercase;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            font-family: "Spartan";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 9px;
+            line-height: 10px;
+            /* identical to box height */
+
+            text-align: center;
+            letter-spacing: 1.92857px;
+            text-transform: uppercase;
+
+            &.first {
+              margin-left: 24px;
+            }
+
+            &.third {
+              margin-right: 24px;
+            }
+          }
+        }
+      }
+
+      .left {
+        height: (768px - 235px - 50px);
+        .planet-img {
+          &.Mercury {
+            width: 111px;
+            height: 111px;
+          }
+
+          &.Venus {
+            width: 154px;
+            height: 154px;
+          }
+
+          &.Earth {
+            width: 173px;
+            height: 173px;
+          }
+
+          &.Mars {
+            width: 129px;
+            height: 129px;
+          }
+
+          &.Jupiter {
+            width: 224px;
+            height: 224px;
+          }
+
+          &.Saturn {
+            width: 210px;
+            height: 210px;
+          }
+
+          &.Uranus {
+            width: 176px;
+            height: 176px;
+          }
+
+          &.Neptune {
+            width: 173px;
+            height: 173px;
+          }
+        }
+
+        .geology {
+          width: 70px;
+          position: absolute;
+          top: 300px;
+        }
+      }
+
+      .right {
+        width: 100%;
+        height: 235px;
+        margin-right: unset;
+
+        .text {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin-top: 30px;
+
+          .title {
+            font-size: 40px;
+            line-height: 52px;
+          }
+
+          .description {
+            width: 327px;
+
+            text-align: center;
+          }
+          .src {
+            margin-bottom: 28px;
+          }
+          margin-right: unset;
+        }
+
+        .options {
+          display: none;
+        }
+      }
+    }
+  }
+}
