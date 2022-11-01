@@ -8,7 +8,7 @@ import {
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={"https://anridarts.github.io/planets-fact-site/"}>
         <Routes>
           <Route path="/" element={<Navigate to={"/planets/Mercury"} />} />
           <Route path="/planets" element={<Main />} />

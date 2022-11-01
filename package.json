@@ -1,7 +1,7 @@
 {
   "name": "planets-fact-site",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
@@ -28,6 +28,7 @@
       "react-app/jest"
     ]
   },
+  "homepage": "/https://anridarts.github.io/planets-fact-site/#",
   "browserslist": {
     "production": [
       ">0.2%",
